@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #fff;
+}
+
+body {
+  font-size: 16px;
+  background: #fff;
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #0b3c7e;
+  padding: 20px 0;
+
+  &__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__items:last-child {
+      justify-content: flex-end;
+
+      & a:first-child {
+        margin-right: 15px;
+        background: #0b3c7e;
+        border-radius: 10px;
+        color: #fff;
+        padding: 4px 6px;
+        transition: all 0.3s;
+        border: 2px solid #fff;
+        font-weight: 600;
+
+        &:hover {
+          background: #fff;
+          color: #0b3c7e;
+        }
+      }
+
+      & a:last-child {
+        background: #0b3c7e;
+        border-radius: 10px;
+        color: #fff;
+        padding: 4px 6px;
+        transition: all 0.3s;
+        border: 2px solid #fff;
+        font-weight: 600;
+
+        &:hover {
+          background: #fff;
+          color: #0b3c7e;
+        }
+      }
+    }
+
+    &__items {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 15%;
+
+      & svg {
+        color: #fff;
+      }
+
+      & svg:first-child {
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin-right: 40px;
+      }
+
+      & svg:last-child {
+        cursor: pointer;
+      }
+
+      & a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__blogs {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    & .css-1i3faf7-MuiPaper-root-MuiCard-root {
+      margin: 27px;
+      width: calc(100% / 3 - 10px);
+
+      & .css-1808mag-MuiPaper-root-MuiAccordion-root:last-of-type {
+        margin-bottom: 10px;
+      }
+
+      & .css-1lt5qva-MuiCardContent-root:first-child {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        & img:first-child {
+          width: 100%;
+          height: 250px;
+          position: absolute;
+          filter: blur(30px);
+        }
+
+        & span {
+          width: 100%;
+          height: 250px;
+          position: absolute;
+          filter: blur(30px);
+          background: #000;
+        }
+
+        & video {
+          width: 70%;
+          height: 250px !important;
+          object-fit: cover;
+          z-index: 1;
+        }
+
+        & img:last-child {
+          width: 70%;
+          height: 250px;
+          object-fit: cover;
+          z-index: 1;
+        }
+      }
+
+      & .css-2928ma-MuiTypography-root {
+        display: flex;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  &__add__post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & form {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      & .custom__file__input {
+        margin-bottom: 10px;
+      }
+
+      & textarea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        resize: none;
+      }
+    }
+
+    & h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  & h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    margin-bottom: 10px;
+  }
+}
+
+.sign__in {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px;
+
+  & .MuiBox-root.css-xn6ruc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: #0b3c7e;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #fff;
+
+    & .MuiFormControl-root.css-4vvya4-MuiFormControl-root {
+      width: 100%;
+      margin-bottom: 20px;
+
+      & label {
+        color: #fff;
+      }
+
+      & input {
+        color: #fff;
+      }
+
+      & .css-1umw9bq-MuiSvgIcon-root {
+        color: #fff;
+      }
+    }
+
+    & .MuiFormControl-root.MuiTextField-root.css-1xp5r68-MuiFormControl-root-MuiTextField-root {
+      width: 100%;
+      margin-bottom: 20px;
+
+      & label {
+        color: #fff;
+      }
+
+      & input {
+        color: #fff;
+      }
+    }
+
+    & .MuiStack-root.css-pl8gqh-MuiStack-root {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  &__forgot {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100% !important;
+  }
+}
+
+.sign__up {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px;
+
+  & .MuiBox-root.css-xn6ruc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: #0b3c7e;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #fff;
+
+    & .MuiFormControl-root.css-4vvya4-MuiFormControl-root {
+      width: 100%;
+      margin-bottom: 20px;
+
+      & label {
+        color: #fff;
+      }
+
+      & input {
+        color: #fff;
+      }
+
+      & .css-1umw9bq-MuiSvgIcon-root {
+        color: #fff;
+      }
+    }
+
+    & .MuiFormControl-root.MuiTextField-root.css-1xp5r68-MuiFormControl-root-MuiTextField-root {
+      width: 100%;
+      margin-bottom: 20px;
+
+      & label {
+        color: #fff;
+      }
+
+      & input {
+        color: #fff;
+      }
+    }
+
+    & .MuiStack-root.css-pl8gqh-MuiStack-root {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+}
+
+.card__edit {
+  position: absolute;
+  right: 0;
+
+  & svg {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+
+  & svg:hover {
+    color: #0b3c7e;
+  }
+}
+
+.password__req {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 14px;
+
+  & li {
+    font-size: 10px;
+  }
+}
+
+.input__error {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  text-align: left;
+  margin: 3px 14px 0;
+  color: #d32f2f;
+}
+
+
+.blog__update {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & h1 {
+    margin-bottom: 20px;
+  }
+
+
+  & .css-1lt5qva-MuiCardContent-root:first-child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    & img:first-child {
+      width: 100%;
+      height: 250px;
+      position: absolute;
+      filter: blur(30px);
+    }
+
+    & span {
+      width: 100%;
+      height: 250px;
+      position: absolute;
+      filter: blur(30px);
+      background: #000;
+    }
+
+    & video {
+      width: 70%;
+      height: 250px !important;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    & img:last-child {
+      width: 70%;
+      height: 250px;
+      object-fit: cover;
+      z-index: 1;
+    }
+  }
+}

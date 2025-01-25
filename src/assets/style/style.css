@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif"; }
+
+html {
+  scroll-behavior: smooth;
+  background: #fff; }
+
+body {
+  font-size: 16px;
+  background: #fff;
+  color: #000; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #0b3c7e;
+  padding: 20px 0; }
+  .header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__nav__items:last-child {
+      justify-content: flex-end; }
+      .header__nav__items:last-child a:first-child {
+        margin-right: 15px;
+        background: #0b3c7e;
+        border-radius: 10px;
+        color: #fff;
+        padding: 4px 6px;
+        transition: all 0.3s;
+        border: 2px solid #fff;
+        font-weight: 600; }
+        .header__nav__items:last-child a:first-child:hover {
+          background: #fff;
+          color: #0b3c7e; }
+      .header__nav__items:last-child a:last-child {
+        background: #0b3c7e;
+        border-radius: 10px;
+        color: #fff;
+        padding: 4px 6px;
+        transition: all 0.3s;
+        border: 2px solid #fff;
+        font-weight: 600; }
+        .header__nav__items:last-child a:last-child:hover {
+          background: #fff;
+          color: #0b3c7e; }
+    .header__nav__items {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 15%; }
+      .header__nav__items svg {
+        color: #fff; }
+      .header__nav__items svg:first-child {
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin-right: 40px; }
+      .header__nav__items svg:last-child {
+        cursor: pointer; }
+      .header__nav__items a {
+        color: #fff;
+        text-decoration: none; }
+
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .home__blogs {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+    .home__blogs .css-1i3faf7-MuiPaper-root-MuiCard-root {
+      margin: 27px;
+      width: calc(100% / 3 - 10px); }
+      .home__blogs .css-1i3faf7-MuiPaper-root-MuiCard-root .css-1808mag-MuiPaper-root-MuiAccordion-root:last-of-type {
+        margin-bottom: 10px; }
+      .home__blogs .css-1i3faf7-MuiPaper-root-MuiCard-root .css-1lt5qva-MuiCardContent-root:first-child {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative; }
+        .home__blogs .css-1i3faf7-MuiPaper-root-MuiCard-root .css-1lt5qva-MuiCardContent-root:first-child img:first-child {
+          width: 100%;
+          height: 250px;
+          position: absolute;
+          filter: blur(30px); }
+        .home__blogs .css-1i3faf7-MuiPaper-root-MuiCard-root .css-1lt5qva-MuiCardContent-root:first-child span {
+          width: 100%;
+          height: 250px;
+          position: absolute;
+          filter: blur(30px);
+          background: #000; }
+        .home__blogs .css-1i3faf7-MuiPaper-root-MuiCard-root .css-1lt5qva-MuiCardContent-root:first-child video {
+          width: 70%;
+          height: 250px !important;
+          object-fit: cover;
+          z-index: 1; }
+        .home__blogs .css-1i3faf7-MuiPaper-root-MuiCard-root .css-1lt5qva-MuiCardContent-root:first-child img:last-child {
+          width: 70%;
+          height: 250px;
+          object-fit: cover;
+          z-index: 1; }
+      .home__blogs .css-1i3faf7-MuiPaper-root-MuiCard-root .css-2928ma-MuiTypography-root {
+        display: flex;
+        padding-left: 15px; }
+  .home__add__post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .home__add__post form {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .home__add__post form .custom__file__input {
+        margin-bottom: 10px; }
+      .home__add__post form textarea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        resize: none; }
+    .home__add__post h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0;
+      margin-bottom: 10px; }
+  .home h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    margin-bottom: 10px; }
+
+.sign__in {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px; }
+  .sign__in .MuiBox-root.css-xn6ruc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: #0b3c7e;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #fff; }
+    .sign__in .MuiBox-root.css-xn6ruc .MuiFormControl-root.css-4vvya4-MuiFormControl-root {
+      width: 100%;
+      margin-bottom: 20px; }
+      .sign__in .MuiBox-root.css-xn6ruc .MuiFormControl-root.css-4vvya4-MuiFormControl-root label {
+        color: #fff; }
+      .sign__in .MuiBox-root.css-xn6ruc .MuiFormControl-root.css-4vvya4-MuiFormControl-root input {
+        color: #fff; }
+      .sign__in .MuiBox-root.css-xn6ruc .MuiFormControl-root.css-4vvya4-MuiFormControl-root .css-1umw9bq-MuiSvgIcon-root {
+        color: #fff; }
+    .sign__in .MuiBox-root.css-xn6ruc .MuiFormControl-root.MuiTextField-root.css-1xp5r68-MuiFormControl-root-MuiTextField-root {
+      width: 100%;
+      margin-bottom: 20px; }
+      .sign__in .MuiBox-root.css-xn6ruc .MuiFormControl-root.MuiTextField-root.css-1xp5r68-MuiFormControl-root-MuiTextField-root label {
+        color: #fff; }
+      .sign__in .MuiBox-root.css-xn6ruc .MuiFormControl-root.MuiTextField-root.css-1xp5r68-MuiFormControl-root-MuiTextField-root input {
+        color: #fff; }
+    .sign__in .MuiBox-root.css-xn6ruc .MuiStack-root.css-pl8gqh-MuiStack-root {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+  .sign__in__title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; }
+  .sign__in__forgot {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100% !important; }
+
+.sign__up {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px; }
+  .sign__up .MuiBox-root.css-xn6ruc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: #0b3c7e;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #fff; }
+    .sign__up .MuiBox-root.css-xn6ruc .MuiFormControl-root.css-4vvya4-MuiFormControl-root {
+      width: 100%;
+      margin-bottom: 20px; }
+      .sign__up .MuiBox-root.css-xn6ruc .MuiFormControl-root.css-4vvya4-MuiFormControl-root label {
+        color: #fff; }
+      .sign__up .MuiBox-root.css-xn6ruc .MuiFormControl-root.css-4vvya4-MuiFormControl-root input {
+        color: #fff; }
+      .sign__up .MuiBox-root.css-xn6ruc .MuiFormControl-root.css-4vvya4-MuiFormControl-root .css-1umw9bq-MuiSvgIcon-root {
+        color: #fff; }
+    .sign__up .MuiBox-root.css-xn6ruc .MuiFormControl-root.MuiTextField-root.css-1xp5r68-MuiFormControl-root-MuiTextField-root {
+      width: 100%;
+      margin-bottom: 20px; }
+      .sign__up .MuiBox-root.css-xn6ruc .MuiFormControl-root.MuiTextField-root.css-1xp5r68-MuiFormControl-root-MuiTextField-root label {
+        color: #fff; }
+      .sign__up .MuiBox-root.css-xn6ruc .MuiFormControl-root.MuiTextField-root.css-1xp5r68-MuiFormControl-root-MuiTextField-root input {
+        color: #fff; }
+    .sign__up .MuiBox-root.css-xn6ruc .MuiStack-root.css-pl8gqh-MuiStack-root {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+  .sign__up__title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; }
+
+.card__edit {
+  position: absolute;
+  right: 0; }
+  .card__edit svg {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out; }
+  .card__edit svg:hover {
+    color: #0b3c7e; }
+
+.password__req {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 14px; }
+  .password__req li {
+    font-size: 10px; }
+
+.input__error {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  text-align: left;
+  margin: 3px 14px 0;
+  color: #d32f2f; }
+
+.blog__update {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .blog__update h1 {
+    margin-bottom: 20px; }
+  .blog__update .css-1lt5qva-MuiCardContent-root:first-child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .blog__update .css-1lt5qva-MuiCardContent-root:first-child img:first-child {
+      width: 100%;
+      height: 250px;
+      position: absolute;
+      filter: blur(30px); }
+    .blog__update .css-1lt5qva-MuiCardContent-root:first-child span {
+      width: 100%;
+      height: 250px;
+      position: absolute;
+      filter: blur(30px);
+      background: #000; }
+    .blog__update .css-1lt5qva-MuiCardContent-root:first-child video {
+      width: 70%;
+      height: 250px !important;
+      object-fit: cover;
+      z-index: 1; }
+    .blog__update .css-1lt5qva-MuiCardContent-root:first-child img:last-child {
+      width: 70%;
+      height: 250px;
+      object-fit: cover;
+      z-index: 1; }
+
+/*# sourceMappingURL=style.css.map */
