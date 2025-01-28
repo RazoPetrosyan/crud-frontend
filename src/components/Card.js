@@ -81,11 +81,11 @@ export default function MediaCard(props) {
           {isImage(mediaPath) && (
             <>
               <img
-                src={`https://crud-backend-hw5f.onrender.com/${mediaPath}`}
+                src={`${mediaPath}`}
                 alt="Media"
               />
               <img
-                src={`https://crud-backend-hw5f.onrender.com/${mediaPath}`}
+                src={`${mediaPath}`}
                 alt="Media"
               />
             </>
@@ -94,7 +94,7 @@ export default function MediaCard(props) {
             <>
               <span />
               <video
-                src={`https://crud-backend-hw5f.onrender.com/${mediaPath}`}
+                src={`${mediaPath}`}
                 controls
               >
                 <track kind="captions" src="" srcLang="en" label="English" default />

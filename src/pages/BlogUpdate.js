@@ -58,11 +58,11 @@ function BlogUpdate() {
                 {isImage(blog?.mediaPath) && (
                   <>
                     <img
-                      src={`https://crud-backend-hw5f.onrender.com/${blog?.mediaPath}`}
+                      src={`${blog?.mediaPath}`}
                       alt="Media"
                     />
                     <img
-                      src={`https://crud-backend-hw5f.onrender.com/${blog?.mediaPath}`}
+                      src={`${blog?.mediaPath}`}
                       alt="Media"
                     />
                   </>
@@ -71,7 +71,7 @@ function BlogUpdate() {
                   <>
                     <span />
                     <video
-                      src={`https://crud-backend-hw5f.onrender.com/${blog?.mediaPath}`}
+                      src={`${blog?.mediaPath}`}
                       controls
                     >
                       <track kind="captions" src="" srcLang="en" label="English" default />
